@@ -5,12 +5,13 @@ interface SectionTitleProps {
   icon: ReactNode;
   title: string;
   delay?: number;
+  className?: string;
 }
 
-const SectionTitle = ({ icon, title, delay = 1 }: SectionTitleProps) => {
+const SectionTitle = ({ icon, title, delay = 1, className = '' }: SectionTitleProps) => {
   return (
     <div 
-      className="flex items-center gap-3 mb-6"
+      className={`flex items-center gap-3 mb-6 ${className}`}
       style={{ 
         animationDelay: `${delay * 0.1}s`,
         opacity: 0, 
