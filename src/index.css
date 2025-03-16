@@ -79,3 +79,30 @@
     @apply absolute rounded-full bg-opacity-20 animate-float;
   }
 }
+
+/* Print styles */
+@media print {
+  body {
+    @apply bg-white;
+  }
+  
+  .bubble, 
+  .animate-float,
+  .animate-bounce-in,
+  .animate-rotate-bounce {
+    animation: none !important;
+    opacity: 0.5 !important;
+  }
+  
+  .hidden.md\:block {
+    display: none !important;
+  }
+  
+  .mb-16 {
+    margin-bottom: 2rem !important;
+  }
+  
+  @page {
+    margin: 1.5cm;
+  }
+}
