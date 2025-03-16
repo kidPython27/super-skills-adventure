@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { 
   Brain, Hammer, Palette, HeartHandshake, Megaphone, ClipboardList,
   Rocket, Puzzle, Handshake, Clock, MessageSquare, PenTool, 
-  Telescope, Gamepad, Lightbulb, HardHat, Award, Users, Bird, Cat, Dog, ToyBrick, Star, Rainbow, Fish, Sun, TreeDeciduous
+  Telescope, Gamepad, Lightbulb, HardHat, Award, Users 
 } from 'lucide-react';
 import SkillCard from '@/components/SkillCard';
 import SuperpowerCard from '@/components/SuperpowerCard';
@@ -11,8 +11,6 @@ import ChallengeCard from '@/components/ChallengeCard';
 import JobCard from '@/components/JobCard';
 import SectionTitle from '@/components/SectionTitle';
 import NextStepCard from '@/components/NextStepCard';
-import ParentsSection from '@/components/ParentsSection';
-import DecorativeImage from '@/components/DecorativeImage';
 
 const Index = () => {
   // Run animations after component is mounted
@@ -70,27 +68,15 @@ const Index = () => {
 
       {/* Main content */}
       <div className="max-w-6xl mx-auto px-6 mt-12">
-        {/* Parents Section (Detachable) */}
-        <ParentsSection />
-
         {/* What Is This Report */}
-        <div className="mb-16 relative">
-          <DecorativeImage 
-            src="https://images.unsplash.com/photo-1472396961693-142e6e269027" 
-            alt="Two deer in nature" 
-            position="right"
-            size="large"
-            rotation={-5}
-            delay={4}
-          />
-          
+        <div className="mb-16">
           <SectionTitle 
             icon={<Rocket />} 
             title="What Is This Report?" 
             delay={5}
           />
           <div 
-            className="bg-white rounded-3xl p-6 shadow-sm border-2 border-kid-blue animate-fade-in-up relative z-10"
+            className="bg-white rounded-3xl p-6 shadow-sm border-2 border-kid-blue animate-fade-in-up"
             style={{ animationDelay: '0.6s' }}
           >
             <p className="text-lg mb-4">
@@ -103,22 +89,13 @@ const Index = () => {
         </div>
 
         {/* Your Superpowers */}
-        <div className="mb-16 relative">
-          <DecorativeImage 
-            src="https://images.unsplash.com/photo-1582562124811-c09040d0a901" 
-            alt="Cute orange and white cat" 
-            position="left"
-            size="medium"
-            rotation={5}
-            delay={6}
-          />
-          
+        <div className="mb-16">
           <SectionTitle 
             icon={<Lightbulb />} 
             title="Your Superpowers!" 
             delay={7}
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <SuperpowerCard
               icon={<Brain />}
               title="Super Thinker"
@@ -144,29 +121,13 @@ const Index = () => {
         </div>
 
         {/* Your Explorer Profile */}
-        <div className="mb-16 relative">
-          <div className="absolute -right-8 top-40 md:top-20 z-0 opacity-70 w-32 h-32 md:w-48 md:h-48"
-              style={{ 
-                animation: `float 6s ease-in-out infinite`,
-                animationDelay: '1s'
-              }}>
-            <Rainbow className="w-full h-full text-kid-pink" />
-          </div>
-          
-          <div className="absolute -left-4 bottom-10 z-0 opacity-60 w-20 h-20 md:w-32 md:h-32"
-              style={{ 
-                animation: `float 7s ease-in-out infinite`,
-                animationDelay: '0.5s'
-              }}>
-            <Sun className="w-full h-full text-kid-yellow" />
-          </div>
-          
+        <div className="mb-16">
           <SectionTitle 
             icon={<Award />} 
             title="Your Explorer Profile!" 
             delay={11}
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <SkillCard
               title="Builder (Realistic)"
               icon={<HardHat />}
@@ -230,23 +191,14 @@ const Index = () => {
         </div>
 
         {/* Super Strengths */}
-        <div className="mb-16 relative">
-          <DecorativeImage 
-            src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1" 
-            alt="Cute kitten" 
-            position="right"
-            size="medium"
-            rotation={-5}
-            delay={17}
-          />
-          
+        <div className="mb-16">
           <SectionTitle 
             icon={<Award />} 
             title="Super Strengths!" 
             delay={18}
           />
           <div 
-            className="bg-white rounded-3xl p-6 shadow-sm border-2 border-kid-purple animate-fade-in-up relative z-10"
+            className="bg-white rounded-3xl p-6 shadow-sm border-2 border-kid-purple animate-fade-in-up"
             style={{ animationDelay: '1.9s' }}
           >
             <ul className="space-y-4">
@@ -267,21 +219,13 @@ const Index = () => {
         </div>
 
         {/* Challenge Missions */}
-        <div className="mb-16 relative">
-          <div className="absolute -left-4 top-10 z-0 opacity-70 w-24 h-24 md:w-40 md:h-40"
-              style={{ 
-                animation: `float 8s ease-in-out infinite`,
-                animationDelay: '1.2s'
-              }}>
-            <Star className="w-full h-full text-kid-yellow" />
-          </div>
-          
+        <div className="mb-16">
           <SectionTitle 
             icon={<Rocket />} 
             title="Challenge Missions!" 
             delay={20}
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <ChallengeCard
               icon={<Users />}
               title="Teamwork Time"
@@ -304,30 +248,13 @@ const Index = () => {
         </div>
 
         {/* Fun Jobs */}
-        <div className="mb-16 relative">
-          <DecorativeImage 
-            src="https://images.unsplash.com/photo-1441057206919-63d19fac2369" 
-            alt="Penguins" 
-            position="left"
-            size="medium"
-            rotation={5}
-            delay={24}
-          />
-          
-          <div className="absolute -right-4 bottom-10 z-0 opacity-60 w-24 h-24 md:w-36 md:h-36"
-              style={{ 
-                animation: `float 7s ease-in-out infinite`,
-                animationDelay: '0.7s'
-              }}>
-            <TreeDeciduous className="w-full h-full text-kid-green" />
-          </div>
-          
+        <div className="mb-16">
           <SectionTitle 
             icon={<Rocket />} 
             title="Fun Jobs You Might Like!" 
             delay={24}
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 relative z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             <JobCard
               icon={<Telescope />}
               title="Space Scientist"
@@ -367,29 +294,13 @@ const Index = () => {
         </div>
 
         {/* What Next */}
-        <div className="mb-8 relative">
-          <div className="absolute -left-8 top-10 z-0 opacity-50 w-24 h-24 md:w-40 md:h-40"
-              style={{ 
-                animation: `float 9s ease-in-out infinite`,
-                animationDelay: '1.5s'
-              }}>
-            <Bird className="w-full h-full text-kid-blue" />
-          </div>
-          
-          <div className="absolute -right-8 top-40 z-0 opacity-50 w-28 h-28 md:w-44 md:h-44"
-              style={{ 
-                animation: `float 8s ease-in-out infinite`,
-                animationDelay: '0.8s'
-              }}>
-            <Dog className="w-full h-full text-kid-orange" />
-          </div>
-          
+        <div className="mb-8">
           <SectionTitle 
             icon={<Rocket />} 
             title="What Can You Do Next?" 
             delay={30}
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 relative z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             <NextStepCard
               icon={<Puzzle />}
               description="Try puzzles – Play brain games!"
@@ -415,31 +326,15 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <div className="mt-16 text-center relative">
-        <div className="absolute left-1/2 -ml-40 -top-10 z-0 opacity-60 w-20 h-20 md:w-32 md:h-32"
-            style={{ 
-              animation: `float 10s ease-in-out infinite`,
-              animationDelay: '1.2s'
-            }}>
-          <Fish className="w-full h-full text-kid-blue" />
-        </div>
-        
-        <div className="absolute right-1/4 -top-20 z-0 opacity-50 w-24 h-24 md:w-36 md:h-36"
-            style={{ 
-              animation: `float 9s ease-in-out infinite`,
-              animationDelay: '0.3s'
-            }}>
-          <ToyBrick className="w-full h-full text-kid-red" />
-        </div>
-        
+      <div className="mt-16 text-center">
         <div 
-          className="text-4xl mb-3 animate-bounce-in relative z-10"
+          className="text-4xl mb-3 animate-bounce-in"
           style={{ animationDelay: '3.5s' }}
         >
           🎯
         </div>
         <p 
-          className="text-lg text-gray-600 animate-fade-in-up relative z-10"
+          className="text-lg text-gray-600 animate-fade-in-up"
           style={{ animationDelay: '3.6s' }}
         >
           Keep exploring and using your amazing skills!
