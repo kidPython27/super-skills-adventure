@@ -107,56 +107,127 @@ const ParentsReport = () => {
 
         <div className="mb-8">
           <h3 className="text-xl font-bold text-primary mb-4 flex items-center">
-            <span className="mr-2">🚀</span> Action Plan for Parents
+            <span className="mr-2">🚀</span> Personalized Action Plan for Parents
           </h3>
           
-          <div className="grid gap-4 md:grid-cols-2">
-            <div className="p-4 border border-blue-100 rounded-lg bg-blue-50">
-              <p className="font-bold text-blue-700 mb-2">1️⃣ Observe & Encourage</p>
-              <ul className="ml-5 list-disc text-gray-700">
-                <li>Watch how your child naturally plays and interacts.</li>
-                <li>Praise their strengths and efforts instead of just results.</li>
-              </ul>
+          <div className="space-y-6">
+            {/* Investigative Advice */}
+            <div className="p-6 border border-purple-100 rounded-lg bg-purple-50">
+              <h4 className="font-bold text-purple-700 mb-3 text-lg flex items-center">
+                <span className="mr-2">🔬</span> Encourage Science Exploration (Investigative)
+              </h4>
+              <p className="text-gray-700 mb-4">
+                Explore fun science experiments together to spark curiosity. Since your child has a strong investigative interest, 
+                engaging in science activities will keep them excited about learning.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <h5 className="font-semibold text-purple-600 mb-2">Suggested Activities:</h5>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Conduct a volcano experiment</li>
+                    <li>• Make a simple circuit</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-semibold text-purple-600 mb-2">Recommended Toys:</h5>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Science kits</li>
+                    <li>• Magnifying glass</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="bg-purple-100 p-3 rounded-lg">
+                <p className="text-purple-800 font-medium">⏰ Time Commitment: 1 hour per week</p>
+              </div>
             </div>
-            
-            <div className="p-4 border border-purple-100 rounded-lg bg-purple-50">
-              <p className="font-bold text-purple-700 mb-2">2️⃣ Provide the Right Tools</p>
-              <ul className="ml-5 list-disc text-gray-700">
-                <li>Choose activities and toys that match their dominant interests.</li>
-                <li>Offer a mix of structured and free play opportunities.</li>
-              </ul>
+
+            {/* Artistic Advice */}
+            <div className="p-6 border border-pink-100 rounded-lg bg-pink-50">
+              <h4 className="font-bold text-pink-700 mb-3 text-lg flex items-center">
+                <span className="mr-2">🎨</span> Incorporate Art into Learning (Artistic)
+              </h4>
+              <p className="text-gray-700 mb-4">
+                Get creative with art projects that relate to what your child is learning. 
+                Artistic activities can enhance creativity and help express ideas visually.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <h5 className="font-semibold text-pink-600 mb-2">Suggested Activities:</h5>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Paint a picture of a science concept</li>
+                    <li>• Create a scrapbook</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-semibold text-pink-600 mb-2">Recommended Toys:</h5>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Art supplies</li>
+                    <li>• Craft kits</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="bg-pink-100 p-3 rounded-lg">
+                <p className="text-pink-800 font-medium">⏰ Time Commitment: 1 hour per week</p>
+              </div>
             </div>
-            
+
+            {/* Realistic Advice */}
+            <div className="p-6 border border-blue-100 rounded-lg bg-blue-50">
+              <h4 className="font-bold text-blue-700 mb-3 text-lg flex items-center">
+                <span className="mr-2">🎸</span> Hands-On Music Learning (Realistic)
+              </h4>
+              <p className="text-gray-700 mb-4">
+                Encourage your child to play guitar with hands-on practice. 
+                With a strong realistic interest, practical music activities will be beneficial.
+              </p>
+              <div className="grid md:grid-cols-2 gap-4 mb-4">
+                <div>
+                  <h5 className="font-semibold text-blue-600 mb-2">Suggested Activities:</h5>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Practice guitar for 15 minutes daily</li>
+                    <li>• Join a local music group</li>
+                  </ul>
+                </div>
+                <div>
+                  <h5 className="font-semibold text-blue-600 mb-2">Recommended Tools:</h5>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Guitar tuner</li>
+                    <li>• Music stand</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="bg-blue-100 p-3 rounded-lg">
+                <p className="text-blue-800 font-medium">⏰ Time Commitment: 15 minutes daily</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mb-8">
+          <h3 className="text-xl font-bold text-primary mb-4 flex items-center">
+            <span className="mr-2">📋</span> Final Action Steps
+          </h3>
+          
+          <div className="space-y-4">
             <div className="p-4 border border-green-100 rounded-lg bg-green-50">
-              <p className="font-bold text-green-700 mb-2">3️⃣ Expose Them to New Experiences</p>
-              <ul className="ml-5 list-disc text-gray-700">
-                <li>Take them to museums, science centers, art workshops, and nature parks.</li>
-                <li>Introduce them to different hobbies (music, sports, storytelling, etc.).</li>
-              </ul>
+              <h4 className="font-bold text-green-700 mb-2">1. Set Up a Weekly Family Science Day</h4>
+              <p className="text-gray-700">
+                Choose a day each week to do a fun science experiment together, making learning exciting and hands-on.
+              </p>
             </div>
             
             <div className="p-4 border border-pink-100 rounded-lg bg-pink-50">
-              <p className="font-bold text-pink-700 mb-2">4️⃣ Foster Growth in Weak Areas</p>
-              <ul className="ml-5 list-disc text-gray-700">
-                <li>If they struggle with teamwork, introduce cooperative board games.</li>
-                <li>If they get frustrated easily, practice small patience-building tasks like puzzles.</li>
-              </ul>
+              <h4 className="font-bold text-pink-700 mb-2">2. Create an Art Corner at Home</h4>
+              <p className="text-gray-700">
+                Designate a space for your child to create art, filled with supplies to inspire their creativity.
+              </p>
             </div>
             
-            <div className="p-4 border border-yellow-100 rounded-lg bg-yellow-50">
-              <p className="font-bold text-yellow-700 mb-2">5️⃣ Keep Career Exploration Fun & Light</p>
-              <ul className="ml-5 list-disc text-gray-700">
-                <li>Ask open-ended questions like: What was your favorite thing to do today?</li>
-                <li>Let them role-play different jobs (e.g., scientist, artist, teacher) in a playful way.</li>
-              </ul>
-            </div>
-            
-            <div className="p-4 border border-orange-100 rounded-lg bg-orange-50">
-              <p className="font-bold text-orange-700 mb-2">6️⃣ Revisit & Adapt as They Grow</p>
-              <ul className="ml-5 list-disc text-gray-700">
-                <li>This report is an early snapshot of their interests—it may change over time!</li>
-                <li>Encourage adaptability and a growth mindset by reminding them that skills develop with practice.</li>
-              </ul>
+            <div className="p-4 border border-blue-100 rounded-lg bg-blue-50">
+              <h4 className="font-bold text-blue-700 mb-2">3. Encourage Daily Guitar Practice</h4>
+              <p className="text-gray-700">
+                Help your child set a fun routine for practicing guitar, making it a special time for both of you.
+              </p>
             </div>
           </div>
         </div>

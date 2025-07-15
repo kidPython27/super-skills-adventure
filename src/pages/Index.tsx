@@ -1,10 +1,12 @@
 
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Brain, Hammer, Palette, HeartHandshake, Megaphone, ClipboardList,
   Rocket, Puzzle, Handshake, Clock, MessageSquare, PenTool, 
   Telescope, Gamepad, Lightbulb, HardHat, Award, Users 
 } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import SkillCard from '@/components/SkillCard';
 import SuperpowerCard from '@/components/SuperpowerCard';
 import ChallengeCard from '@/components/ChallengeCard';
@@ -339,6 +341,26 @@ const Index = () => {
         >
           Keep exploring and using your amazing skills!
         </p>
+        
+        <div className="flex gap-4 justify-center mt-6">
+          <Link to="/exploration-plan">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-kid-blue to-kid-purple hover:from-kid-blue/90 hover:to-kid-purple/90 text-white"
+            >
+              My Adventure Plan! 🚀
+            </Button>
+          </Link>
+          <Link to="/parents">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="border-kid-blue text-kid-blue hover:bg-kid-blue/10"
+            >
+              Parent's Guide
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );
