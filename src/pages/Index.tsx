@@ -336,7 +336,7 @@ const Index = () => {
         <div className="mb-16">
           <SectionTitle 
             icon={<Sparkles />} 
-            title="Soft Skills - Your Superpowers!" 
+            title="Soft Skills - Your Friendly Powers!" 
             delay={37}
           />
           
@@ -345,9 +345,9 @@ const Index = () => {
             style={{ animationDelay: '3.8s' }}
           >
             <div className="flex items-start gap-4 mb-6">
-              <div className="text-4xl">💪</div>
+              <div className="text-4xl">💖</div>
               <div>
-                <p className="text-lg">Soft skills are superpowers that help you work well with others, solve problems, and feel confident! They make you awesome at school, in games, with friends — and in your future career!</p>
+                <p className="text-lg">Soft skills are friendly powers that help you talk, share, play, and feel great with others! They're like magic manners for life and learning!</p>
               </div>
             </div>
 
@@ -355,85 +355,109 @@ const Index = () => {
               <div className="bg-white rounded-2xl p-4 border-2 border-kid-blue/30 hover:border-kid-blue transition-colors">
                 <h4 className="font-bold text-kid-blue mb-2 flex items-center">
                   <Users className="mr-2" size={18} />
-                  Teamwork
+                  Sharing
                 </h4>
-                <p className="text-sm mb-2">Working nicely with others to get things done.</p>
-                <p className="text-xs bg-kid-blue/10 rounded p-2">Join group projects or play team sports!</p>
+                <p className="text-sm mb-2">Letting others use your toys, colors, or games.</p>
+                <p className="text-xs bg-kid-blue/10 rounded p-2">Take turns with a toy or let a friend try your favorite game.</p>
               </div>
 
               <div className="bg-white rounded-2xl p-4 border-2 border-kid-purple/30 hover:border-kid-purple transition-colors">
                 <h4 className="font-bold text-kid-purple mb-2 flex items-center">
                   <MessageSquare className="mr-2" size={18} />
-                  Communication
+                  Listening
                 </h4>
-                <p className="text-sm mb-2">Sharing your thoughts clearly and listening too.</p>
-                <p className="text-xs bg-kid-purple/10 rounded p-2">Tell stories or ask how someone's day went!</p>
+                <p className="text-sm mb-2">Hearing what others say with your ears and your heart.</p>
+                <p className="text-xs bg-kid-purple/10 rounded p-2">Look at the person talking and wait your turn to speak.</p>
               </div>
 
               <div className="bg-white rounded-2xl p-4 border-2 border-kid-orange/30 hover:border-kid-orange transition-colors">
                 <h4 className="font-bold text-kid-orange mb-2 flex items-center">
-                  <Puzzle className="mr-2" size={18} />
-                  Problem Solving
+                  <Heart className="mr-2" size={18} />
+                  Being Kind
                 </h4>
-                <p className="text-sm mb-2">Figuring out what to do when something is tricky.</p>
-                <p className="text-xs bg-kid-orange/10 rounded p-2">Try puzzles and think of 3 ways to fix things!</p>
+                <p className="text-sm mb-2">Using nice words and helping hands.</p>
+                <p className="text-xs bg-kid-orange/10 rounded p-2">Say 'please', 'thank you', and help someone tie their shoelace.</p>
               </div>
 
               <div className="bg-white rounded-2xl p-4 border-2 border-kid-pink/30 hover:border-kid-pink transition-colors">
                 <h4 className="font-bold text-kid-pink mb-2 flex items-center">
-                  <Palette className="mr-2" size={18} />
-                  Creativity
+                  <ClipboardList className="mr-2" size={18} />
+                  Following Rules
                 </h4>
-                <p className="text-sm mb-2">Thinking of new ideas and fun ways to do things.</p>
-                <p className="text-xs bg-kid-pink/10 rounded p-2">Draw from imagination or create flying school stories!</p>
+                <p className="text-sm mb-2">Doing what's right at home or in class.</p>
+                <p className="text-xs bg-kid-pink/10 rounded p-2">Stop when the teacher claps or clean up after playtime.</p>
               </div>
 
               <div className="bg-white rounded-2xl p-4 border-2 border-kid-green/30 hover:border-kid-green transition-colors">
                 <h4 className="font-bold text-kid-green mb-2 flex items-center">
-                  <Heart className="mr-2" size={18} />
-                  Empathy
+                  <Target className="mr-2" size={18} />
+                  Being Brave
                 </h4>
-                <p className="text-sm mb-2">Understanding how someone else feels.</p>
-                <p className="text-xs bg-kid-green/10 rounded p-2">Ask friends how they feel and listen carefully!</p>
+                <p className="text-sm mb-2">Trying new things even if they feel a little scary.</p>
+                <p className="text-xs bg-kid-green/10 rounded p-2">Speak in front of the class or try a new food!</p>
               </div>
 
               <div className="bg-white rounded-2xl p-4 border-2 border-kid-teal/30 hover:border-kid-teal transition-colors">
                 <h4 className="font-bold text-kid-teal mb-2 flex items-center">
-                  <Target className="mr-2" size={18} />
-                  Confidence
+                  <HeartHandshake className="mr-2" size={18} />
+                  Helping Others
                 </h4>
-                <p className="text-sm mb-2">Believing in yourself, even if something is hard.</p>
-                <p className="text-xs bg-kid-teal/10 rounded p-2">Try something new every week!</p>
+                <p className="text-sm mb-2">Doing small things to make someone's day better.</p>
+                <p className="text-xs bg-kid-teal/10 rounded p-2">Pick up a dropped pencil or give someone a hug when they're sad.</p>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl p-4 border border-kid-yellow">
+            <div className="bg-white rounded-2xl p-4 border border-kid-yellow mb-4">
               <h4 className="font-bold text-kid-blue mb-3 flex items-center">
-                <span className="mr-2">🌟</span> Daily Challenges - Try One Today!
+                <span className="mr-2">🌟</span> Daily Fun Challenges - Try One Today!
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <div className="flex items-center gap-2">
                   <span className="text-kid-pink">💖</span>
-                  <span className="text-sm">Say something kind to a classmate</span>
+                  <span className="text-sm">Say 'Good job!' to a friend today</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-kid-blue">🤝</span>
-                  <span className="text-sm">Ask if you can help with a task at home</span>
+                  <span className="text-sm">Help your teacher tidy the classroom</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-kid-purple">📚</span>
-                  <span className="text-sm">Write a short story and read it to someone</span>
+                  <span className="text-kid-purple">🫂</span>
+                  <span className="text-sm">Give your family a big thank-you hug!</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-kid-green">🧩</span>
-                  <span className="text-sm">Try to solve a small problem on your own first</span>
+                  <span className="text-kid-green">🍎</span>
+                  <span className="text-sm">Try a new food at lunch and smile even if it's weird!</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-kid-orange">🎮</span>
+                  <span className="text-sm">Let someone else go first in a game</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-4 border border-kid-green mb-4">
+              <h4 className="font-bold text-kid-blue mb-3 flex items-center">
+                <span className="mr-2">🎯</span> Play & Learn Ideas
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-kid-blue/10 rounded-xl p-3">
+                  <h5 className="font-bold text-kid-blue mb-2">Play house or school with friends</h5>
+                  <p className="text-xs text-gray-600">Practice: Sharing, Listening, Kindness</p>
+                </div>
+                <div className="bg-kid-pink/10 rounded-xl p-3">
+                  <h5 className="font-bold text-kid-pink mb-2">Make a thank-you card for someone</h5>
+                  <p className="text-xs text-gray-600">Practice: Being Kind, Helping Others</p>
+                </div>
+                <div className="bg-kid-green/10 rounded-xl p-3">
+                  <h5 className="font-bold text-kid-green mb-2">Try a new game at recess</h5>
+                  <p className="text-xs text-gray-600">Practice: Being Brave, Following Rules</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-4 bg-gradient-to-r from-kid-yellow/30 to-kid-orange/30 rounded-2xl p-4">
               <p className="text-center font-bold text-kid-blue">
-                When you grow these skills, you become a better friend, student, and leader! 🌟
+                These happy skills help you make friends, do better in school, and feel proud of yourself. They turn you into a real-life superhero! 🦸‍♂️
               </p>
             </div>
           </div>
