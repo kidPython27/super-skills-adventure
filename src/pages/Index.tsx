@@ -1,10 +1,10 @@
-
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   Brain, Hammer, Palette, HeartHandshake, Megaphone, ClipboardList,
   Rocket, Puzzle, Handshake, Clock, MessageSquare, PenTool, 
-  Telescope, Gamepad, Lightbulb, HardHat, Award, Users 
+  Telescope, Gamepad, Lightbulb, HardHat, Award, Users, 
+  Zap, Heart, Mic, Sparkles, Target, Shield
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SkillCard from '@/components/SkillCard';
@@ -217,6 +217,225 @@ const Index = () => {
                 <span className="text-lg">You use your imagination to make amazing ideas!</span>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* AI Skills Section */}
+        <div className="mb-16">
+          <SectionTitle 
+            icon={<Zap />} 
+            title="AI Skills - The Future is Here!" 
+            delay={35}
+          />
+          
+          <div 
+            className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-3xl p-6 shadow-sm border-2 border-kid-blue animate-fade-in-up mb-8"
+            style={{ animationDelay: '3.6s' }}
+          >
+            <div className="flex items-start gap-4 mb-6">
+              <div className="text-4xl">🤖</div>
+              <div>
+                <h3 className="text-xl font-bold text-kid-blue mb-2">What is AI?</h3>
+                <p className="text-lg">AI (Artificial Intelligence) is like a smart robot brain. It helps computers and machines think and do tasks like humans! You already use it when you ask voice assistants, play smart games, or see recommendations on YouTube.</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="bg-white rounded-2xl p-4 border border-kid-purple/20">
+                <h4 className="font-bold text-kid-purple mb-3 flex items-center">
+                  <span className="mr-2">🌟</span> How AI is Used Today
+                </h4>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2">
+                    <span className="text-kid-green">•</span>
+                    <span>Helping doctors understand health better</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-kid-green">•</span>
+                    <span>Making cars smarter and safer</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-kid-green">•</span>
+                    <span>Creating music, art, and stories</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-kid-green">•</span>
+                    <span>Helping teachers with learning tools</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-kid-green">•</span>
+                    <span>Giving advice in games and apps</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-2xl p-4 border border-kid-orange/20">
+                <h4 className="font-bold text-kid-orange mb-3 flex items-center">
+                  <span className="mr-2">🚀</span> Super Skills to Learn
+                </h4>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2">
+                    <span className="text-kid-blue">✨</span>
+                    <span>Be Curious — always ask 'Why?' and 'How?'</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-kid-blue">✨</span>
+                    <span>Learn basic coding with block tools like Scratch</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-kid-blue">✨</span>
+                    <span>Use smart tools safely and kindly</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="text-kid-blue">✨</span>
+                    <span>Play with AI-powered games or art apps</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="bg-gradient-to-r from-kid-pink to-kid-purple text-white rounded-2xl p-4">
+                <h5 className="font-bold mb-2 flex items-center">
+                  <Palette className="mr-2" size={20} />
+                  Art & Drawing
+                </h5>
+                <p className="text-sm mb-2">AI tools can help you color faster or suggest cool drawing ideas!</p>
+                <p className="text-xs bg-white/20 rounded p-2">Try drawing apps that suggest shapes!</p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-kid-green to-kid-teal text-white rounded-2xl p-4">
+                <h5 className="font-bold mb-2 flex items-center">
+                  <Heart className="mr-2" size={20} />
+                  Helping People
+                </h5>
+                <p className="text-sm mb-2">AI helps doctors and teachers give better help!</p>
+                <p className="text-xs bg-white/20 rounded p-2">Learn to ask good questions and be kind!</p>
+              </div>
+              
+              <div className="bg-gradient-to-r from-kid-blue to-kid-indigo text-white rounded-2xl p-4">
+                <h5 className="font-bold mb-2 flex items-center">
+                  <Gamepad className="mr-2" size={20} />
+                  Games & Tech
+                </h5>
+                <p className="text-sm mb-2">Game creators use AI to make smart characters!</p>
+                <p className="text-xs bg-white/20 rounded p-2">Try game design tools for kids!</p>
+              </div>
+            </div>
+
+            <div className="mt-6 bg-kid-yellow/20 rounded-2xl p-4 border border-kid-yellow">
+              <p className="text-center font-bold text-kid-blue flex items-center justify-center gap-2">
+                <Shield size={20} />
+                Always talk to an adult before trying a new website or app!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Soft Skills Section */}
+        <div className="mb-16">
+          <SectionTitle 
+            icon={<Sparkles />} 
+            title="Soft Skills - Your Superpowers!" 
+            delay={37}
+          />
+          
+          <div 
+            className="bg-gradient-to-r from-pink-50 to-orange-50 rounded-3xl p-6 shadow-sm border-2 border-kid-pink animate-fade-in-up mb-8"
+            style={{ animationDelay: '3.8s' }}
+          >
+            <div className="flex items-start gap-4 mb-6">
+              <div className="text-4xl">💪</div>
+              <div>
+                <p className="text-lg">Soft skills are superpowers that help you work well with others, solve problems, and feel confident! They make you awesome at school, in games, with friends — and in your future career!</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+              <div className="bg-white rounded-2xl p-4 border-2 border-kid-blue/30 hover:border-kid-blue transition-colors">
+                <h4 className="font-bold text-kid-blue mb-2 flex items-center">
+                  <Users className="mr-2" size={18} />
+                  Teamwork
+                </h4>
+                <p className="text-sm mb-2">Working nicely with others to get things done.</p>
+                <p className="text-xs bg-kid-blue/10 rounded p-2">Join group projects or play team sports!</p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-4 border-2 border-kid-purple/30 hover:border-kid-purple transition-colors">
+                <h4 className="font-bold text-kid-purple mb-2 flex items-center">
+                  <MessageSquare className="mr-2" size={18} />
+                  Communication
+                </h4>
+                <p className="text-sm mb-2">Sharing your thoughts clearly and listening too.</p>
+                <p className="text-xs bg-kid-purple/10 rounded p-2">Tell stories or ask how someone's day went!</p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-4 border-2 border-kid-orange/30 hover:border-kid-orange transition-colors">
+                <h4 className="font-bold text-kid-orange mb-2 flex items-center">
+                  <Puzzle className="mr-2" size={18} />
+                  Problem Solving
+                </h4>
+                <p className="text-sm mb-2">Figuring out what to do when something is tricky.</p>
+                <p className="text-xs bg-kid-orange/10 rounded p-2">Try puzzles and think of 3 ways to fix things!</p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-4 border-2 border-kid-pink/30 hover:border-kid-pink transition-colors">
+                <h4 className="font-bold text-kid-pink mb-2 flex items-center">
+                  <Palette className="mr-2" size={18} />
+                  Creativity
+                </h4>
+                <p className="text-sm mb-2">Thinking of new ideas and fun ways to do things.</p>
+                <p className="text-xs bg-kid-pink/10 rounded p-2">Draw from imagination or create flying school stories!</p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-4 border-2 border-kid-green/30 hover:border-kid-green transition-colors">
+                <h4 className="font-bold text-kid-green mb-2 flex items-center">
+                  <Heart className="mr-2" size={18} />
+                  Empathy
+                </h4>
+                <p className="text-sm mb-2">Understanding how someone else feels.</p>
+                <p className="text-xs bg-kid-green/10 rounded p-2">Ask friends how they feel and listen carefully!</p>
+              </div>
+
+              <div className="bg-white rounded-2xl p-4 border-2 border-kid-teal/30 hover:border-kid-teal transition-colors">
+                <h4 className="font-bold text-kid-teal mb-2 flex items-center">
+                  <Target className="mr-2" size={18} />
+                  Confidence
+                </h4>
+                <p className="text-sm mb-2">Believing in yourself, even if something is hard.</p>
+                <p className="text-xs bg-kid-teal/10 rounded p-2">Try something new every week!</p>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl p-4 border border-kid-yellow">
+              <h4 className="font-bold text-kid-blue mb-3 flex items-center">
+                <span className="mr-2">🌟</span> Daily Challenges - Try One Today!
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div className="flex items-center gap-2">
+                  <span className="text-kid-pink">💖</span>
+                  <span className="text-sm">Say something kind to a classmate</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-kid-blue">🤝</span>
+                  <span className="text-sm">Ask if you can help with a task at home</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-kid-purple">📚</span>
+                  <span className="text-sm">Write a short story and read it to someone</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-kid-green">🧩</span>
+                  <span className="text-sm">Try to solve a small problem on your own first</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-4 bg-gradient-to-r from-kid-yellow/30 to-kid-orange/30 rounded-2xl p-4">
+              <p className="text-center font-bold text-kid-blue">
+                When you grow these skills, you become a better friend, student, and leader! 🌟
+              </p>
+            </div>
           </div>
         </div>
 
