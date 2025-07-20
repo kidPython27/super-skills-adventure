@@ -4,7 +4,7 @@ import {
   Brain, Hammer, Palette, HeartHandshake, Megaphone, ClipboardList,
   Rocket, Puzzle, Handshake, Clock, MessageSquare, PenTool, 
   Telescope, Gamepad, Lightbulb, HardHat, Award, Users, 
-  Zap, Heart, Mic, Sparkles, Target, Shield
+  Zap, Heart, Mic, Sparkles, Target, Shield, Building2
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import SkillCard from '@/components/SkillCard';
@@ -68,8 +68,40 @@ const Index = () => {
         <div className="bubble w-16 h-16 top-20 right-20 bg-white" style={{ animationDelay: '3s' }}></div>
       </div>
 
+      {/* Partner Institute Description */}
+      <div className="max-w-4xl mx-auto px-6 mt-12 mb-12">
+        <div 
+          className="bg-white rounded-3xl p-6 shadow-lg border-2 border-kid-indigo/20 animate-fade-in-up"
+          style={{ animationDelay: '0.4s' }}
+        >
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 bg-gradient-to-br from-kid-blue to-kid-indigo rounded-full flex items-center justify-center">
+                <Building2 className="w-6 h-6 text-white" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-bold text-kid-blue mb-3">About Our Partner Institute</h3>
+              <p className="text-lg text-gray-700 mb-3 leading-relaxed">
+                This Super Skills Adventure Report is brought to you by our trusted partner institute, 
+                dedicated to helping young explorers discover their amazing talents and potential!
+              </p>
+              <p className="text-base text-gray-600 leading-relaxed">
+                Our institute has been specially trained by <span className="font-semibold text-kid-purple">mentorrd</span> in 
+                advanced report generation and interpretation techniques, ensuring that every child receives 
+                personalized, accurate, and inspiring guidance for their learning journey.
+              </p>
+              <div className="mt-4 flex items-center gap-2">
+                <div className="w-2 h-2 bg-kid-yellow rounded-full"></div>
+                <span className="text-sm text-kid-blue font-medium">Certified by mentorrd for quality assurance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Main content */}
-      <div className="max-w-6xl mx-auto px-6 mt-12">
+      <div className="max-w-6xl mx-auto px-6">
         {/* What Is This Report */}
         <div className="mb-16">
           <SectionTitle 
